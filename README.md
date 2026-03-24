@@ -158,13 +158,13 @@ Interview-AI/
 ├── Backend/                 # Node.js API server
 │   ├── src/
 │   │   ├── controllers/     # Request handlers
-│   │   ├── models/         # MongoDB schemas
-│   │   ├── routes/         # API endpoints
-│   │   ├── services/       # Business logic
+│   │   ├── models/          # MongoDB schemas
+│   │   ├── routes/          # API endpoints
+│   │   ├── services/        # Business logic
 │   │   ├── middlewares/     # Auth & validation
-│   │   └── config/         # Database connection
+│   │   └── config/          # Database connection
 │   └── package.json
-├── Frontend/               # React application
+├── Frontend/                # React application
 │   ├── src/
 │   │   ├── features/       # Feature-based components
 │   │   │   ├── auth/     # Authentication components

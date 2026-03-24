@@ -9,7 +9,7 @@
 ## 🏛️ High-Level Architecture
 
 ```
-┌─────────────────┐    HTTP/HTTPS    ┌─────────────────┐    API Calls    ┌─────────────────┐
+┌─────────────────┐    HTTP/HTTPS    ┌─────────────────┐    API Calls     ┌─────────────────┐
 │   Frontend      │ ◄──────────────► │   Backend API   │ ◄──────────────► │   External      │
 │   (React SPA)   │                  │   (Express.js)  │                  │   Services      │
 │   Port: 5173    │                  │   Port: 3000    │                  │                 │

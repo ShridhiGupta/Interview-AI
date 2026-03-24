@@ -65,18 +65,26 @@ async function registerUserController(req, res) {
 async function loginUserController(req, res) {
 
     const { email, password } = req.body
+    
+    console.log("Login attempt for email:", email)
 
     const user = await userModel.findOne({ email })
+    
+    console.log("User found:", user ? "Yes" : "No")
 
     if (!user) {
+        console.log("Login failed: User not found")
         return res.status(400).json({
             message: "Invalid email or password"
         })
     }
 
     const isPasswordValid = await bcrypt.compare(password, user.password)
+    
+    console.log("Password valid:", isPasswordValid ? "Yes" : "No")
 
     if (!isPasswordValid) {
+        console.log("Login failed: Invalid password")
         return res.status(400).json({
             message: "Invalid email or password"
         })
@@ -89,6 +97,7 @@ async function loginUserController(req, res) {
     )
 
     res.cookie("token", token)
+    console.log("Login successful for user:", user.username)
     res.status(200).json({
         message: "User loggedIn successfully.",
         user: {
