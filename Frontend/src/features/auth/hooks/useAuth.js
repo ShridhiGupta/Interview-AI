@@ -51,15 +51,22 @@ export const useAuth = () => {
 
         const getAndSetUser = async () => {
             try {
-
                 const data = await getMe()
                 setUser(data.user)
-            } catch (err) { } finally {
+            } catch (err) { 
+                // Don't set user to null if they're already logged in
+                // This prevents overriding successful login state
+            } finally {
                 setLoading(false)
             }
         }
 
-        getAndSetUser()
+        // Only call getMe if user is not already set
+        if (!user) {
+            getAndSetUser()
+        } else {
+            setLoading(false)
+        }
 
     }, [])
 

@@ -222,6 +222,22 @@ $font-stack:     system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Robot
         background-color: rgba($accent, 0.05);
     }
 
+    &--dragging {
+        border-color: $accent;
+        background-color: rgba($accent, 0.1);
+        transform: scale(1.02);
+    }
+
+    &--has-file {
+        border-color: #28a745;
+        background-color: rgba(#28a745, 0.05);
+        border-style: solid;
+
+        &:hover {
+            background-color: rgba(#28a745, 0.1);
+        }
+    }
+
     &__icon {
         color: $accent;
         margin-bottom: 0.25rem;
@@ -238,6 +254,63 @@ $font-stack:     system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Robot
         font-size: 0.75rem;
         color: $text-muted;
         margin: 0;
+    }
+
+    &__file-info {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        width: 100%;
+        padding: 0.5rem;
+    }
+
+    &__success-icon {
+        color: #28a745;
+        font-size: 1.2rem;
+        flex-shrink: 0;
+    }
+
+    &__file-details {
+        flex: 1;
+        min-width: 0;
+    }
+
+    &__file-name {
+        font-size: 0.875rem;
+        font-weight: 500;
+        color: $text-primary;
+        margin: 0;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    &__file-size {
+        font-size: 0.75rem;
+        color: $text-muted;
+        margin: 0;
+    }
+
+    &__remove-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 24px;
+        height: 24px;
+        background-color: rgba(#dc3545, 0.1);
+        color: #dc3545;
+        border: 1px solid rgba(#dc3545, 0.3);
+        border-radius: 50%;
+        cursor: pointer;
+        font-size: 0.75rem;
+        font-weight: 600;
+        transition: background-color 0.2s, color 0.2s;
+        flex-shrink: 0;
+
+        &:hover {
+            background-color: rgba(#dc3545, 0.2);
+            color: #dc3545;
+        }
     }
 }
 
