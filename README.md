@@ -1,10 +1,10 @@
-# 🚀 Interview AI
+# Interview AI
 
 **Interview AI** is an AI-powered interview preparation platform that helps candidates prepare effectively for job interviews by generating **personalized interview reports, targeted questions, and structured preparation plans** based on their resume and job description.
 
 ---
 
-## ✨ Features
+## Features
 
 - **AI-Generated Interview Reports**  
   Detailed interview analysis tailored to your resume and target role.
@@ -23,7 +23,7 @@
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 ### Frontend
 - React `19.2.0`
@@ -43,24 +43,24 @@
 
 ---
 
-## 📋 Prerequisites
+## Prerequisites
 
 - Node.js `v18+`
 - MongoDB (Local or MongoDB Atlas)
 - Google AI API key  
-  👉 https://makersuite.google.com/app/apikey
+   https://makersuite.google.com/app/apikey
 
 ---
 
-## ⚙️ Installation
+## Installation
 
-### 1️⃣ Clone the repository
+### Clone the repository
 ```bash
 git clone https://github.com/ShridhiGupta/Interview-AI.git
 cd Interview-AI
 ```
 
-### 2️⃣ Install dependencies
+### Install dependencies
 ```bash
 # Backend dependencies
 cd Backend
@@ -71,7 +71,7 @@ cd ../Frontend
 npm install
 ```
 
-### 3️⃣ Set up environment variables
+### Set up environment variables
 Create `Backend/.env` file:
 ```env
 MONGO_URI=mongodb+srv://your-connection-string
@@ -80,7 +80,7 @@ GOOGLE_GENAI_API_KEY=your-google-ai-api-key
 PORT=3000
 ```
 
-### 4️⃣ Start the application
+### Start the application
 ```bash
 # Terminal 1 - Backend (in Backend directory)
 npm run dev
@@ -91,43 +91,43 @@ npm run dev
 
 ---
 
-## 🌐 Access
+## Access
 
 - **Frontend**: http://localhost:5173
 - **Backend API**: http://localhost:3000
 
 ---
 
-## 📖 Usage Guide
+## Usage Guide
 
-### 1️⃣ Create Account
+### Create Account
 - Register with email and password
 - Login to access the dashboard
 
-### 2️⃣ Prepare Your Profile
+### Prepare Your Profile
 - Upload your resume (PDF/TXT format)
 - Add a brief self-description
 - Enter the target job description
 
-### 3️⃣ Generate Interview Report
+### Generate Interview Report
 - Click "Generate Report" button
 - AI analyzes your profile against job requirements
 - Receive comprehensive interview preparation guide
 
-### 4️⃣ Review Results
+### Review Results
 - **Technical Questions**: Role-specific technical interview questions
 - **Behavioral Questions**: Situational and behavioral questions
 - **Skill Gaps**: Areas needing improvement
 - **Preparation Plan**: Day-wise study schedule
 
-### 5️⃣ Download Resume
+### Download Resume
 - Generate tailored resume PDF
 - Optimized for the specific job description
 - Professional formatting ready for applications
 
 ---
 
-## 🔗 API Endpoints
+## API Endpoints
 
 ### Authentication
 - `POST /api/auth/register` - Register new user
@@ -141,7 +141,7 @@ npm run dev
 
 ---
 
-## 🛡️ Security Features
+## Security Features
 
 - **JWT Authentication**: Secure token-based authentication
 - **Password Hashing**: bcrypt with salt rounds for security
@@ -151,7 +151,7 @@ npm run dev
 
 ---
 
-## 🚀 Project Structure
+## Project Structure
 
 ```
 Interview-AI/
@@ -178,7 +178,7 @@ Interview-AI/
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 1. Fork the repository
 2. Create a feature branch
@@ -188,20 +188,20 @@ Interview-AI/
 
 ---
 
-## 📝 License
+## License
 
 This project is licensed under the ISC License.
 
 ---
 
-## 👨‍💻 Author
+## Author
 
 Created by **Shridhi Gupta**  
-🔗 GitHub: [ShridhiGupta](https://github.com/ShridhiGupta)
+GitHub: [ShridhiGupta](https://github.com/ShridhiGupta)
 
 ---
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - **Google Generative AI** - For powerful AI capabilities
 - **React Community** - Excellent documentation and tools
